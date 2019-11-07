@@ -1,0 +1,5 @@
+# Files
+*.vcx*
+
+# Dirs
+.vs
