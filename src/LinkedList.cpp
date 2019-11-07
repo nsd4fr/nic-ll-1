@@ -91,6 +91,7 @@ void LinkedList::insertAfter(int x, Iterator position) {
 	position.current->next = newNode;
 
 	count++;
+	resetSearcher();
 }
 
 void LinkedList::insertBefore(int x, Iterator position) {
@@ -103,6 +104,7 @@ void LinkedList::insertBefore(int x, Iterator position) {
 	position.current->previous = newNode;
 
 	count++;
+	resetSearcher();
 }
 
 void LinkedList::insertAtTail(int x) {
@@ -113,6 +115,7 @@ void LinkedList::insertAtTail(int x) {
 void LinkedList::insertAtHead(int x) {
 	Iterator pos = first();
 	insertBefore(x, pos);
+	resetSearcher();
 }
 
 void LinkedList::remove(int x) {
@@ -126,6 +129,7 @@ void LinkedList::remove(int x) {
 
 		delete pos.current;
 		count--;
+		resetSearcher();
 	}
 }
 
