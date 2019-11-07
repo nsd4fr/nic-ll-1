@@ -32,6 +32,7 @@ I believe the only requirement on compilation is that due to the use of `nullptr
 
 # TODO
 - Abstract the use of null
+- Finish the full implementation and flesh out testing
 
 
 # Credits
