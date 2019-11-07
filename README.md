@@ -2,6 +2,9 @@
 
 This is an idea for a Linked List optimization I had and decided to implement in C++. 
 
+**This repository is not ready for use**
+The current code will compile and run with Test.cpp. However the program is not fully implemented yet. 
+
 
 # The Big Idea
 One of the biggest downsides of the linked list structure is that searching or accessing an indexed member of the linked list is a linear time operation. Some ways of overcoming this are the LRU Cached Linked List, which stores items in order of most recent access in a hash table as well, which is very time efficient, but memory slow. One can also move most recently accessed items to the front of the linked list, which improves search times for elements that are requested or queried often. 
@@ -28,11 +31,16 @@ for (int i = 0; i < list1.size(); i++){
 In the standard linked list implementation, the above algorithm would be O(n^2). With my optimization, the algorithm is only O(n).
 
 # Installation
-I believe the only requirement on compilation is that due to the use of `nullptr`, the C++ STD11 standard must be used. To use, include the LinkedList header and get going!
+I believe the only requirement on compilation is that due to the use of `nullptr`, the C++11 standard must be used. 
+
+To use, include the LinkedList header and get going!
 
 # TODO
-- Abstract the use of null
-- Finish the full implementation and flesh out testing
+* Abstract the use of null
+* Finish the full implementation and flesh out testing
+* Decide how to implement updating the Searcher after adding or removing an element
+	1. Option 1: Set the Searcher of the LL to be the head after every insertion or deletion
+	2. Option 2: Perform a linear time scan to see if the searcher was before or after the inserted/deleted element
 
 
 # Credits
