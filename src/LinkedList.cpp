@@ -50,6 +50,10 @@ LinkedList* LinkedList::operator=(const LinkedList& source) {
 	return this;
 }
 
+void LinkedList::resetSearcher() {
+	searcher.reset(head);
+}
+
 bool LinkedList::isEmpty() const {
 	return (count == 0);
 }

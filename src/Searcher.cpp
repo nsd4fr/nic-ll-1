@@ -8,6 +8,11 @@ Searcher::Searcher(ListNode* theNode) : Iterator(theNode) {
 	index = -1;
 }
 
+void Searcher::reset(ListNode* theNode) {
+	current = theNode;
+	index = -1;
+}
+
 int Searcher::pos() const {
 	return index;
 }

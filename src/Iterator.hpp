@@ -8,6 +8,7 @@ class Iterator {
 protected: 
 	ListNode* current;
 	friend class LinkedList;
+	friend class Searcher; 
 
 public:
 	Iterator();

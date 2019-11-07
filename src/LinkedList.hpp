@@ -15,6 +15,8 @@ class LinkedList {
 
 	Searcher searcher;
 
+	void resetSearcher();
+
 public:
 	LinkedList();
 	LinkedList(const LinkedList& source);

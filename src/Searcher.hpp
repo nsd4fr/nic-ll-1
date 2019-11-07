@@ -12,4 +12,5 @@ public:
 	int pos() const;
 	void moveForward();
 	void moveBackward();
+	void reset(ListNode* theNode);
 };
