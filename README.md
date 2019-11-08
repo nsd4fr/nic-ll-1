@@ -43,10 +43,6 @@ To use, include the LinkedList header and get going!
 # TODO
 * Abstract the use of null
 * Finish the full implementation and flesh out testing
-* Decide how to implement updating the Searcher after adding or removing an element
-	1. Option 1: Set the Searcher of the LL to be the head after every insertion or deletion
-	2. Option 2: Perform a linear time scan to see if the searcher was before or after the inserted/deleted element
-
 
 # Credits
 The base implementation of Linked List is heavily drawn from the UVA PDR repository, with my own additions to create the optimization. Their code is released under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license. 
