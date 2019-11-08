@@ -146,10 +146,13 @@ int LinkedList::size() const {
 }
 
 Iterator LinkedList::operator[](int index) {
-	if (index > count) {
+	if (std::abs(index) > count) {
 		return Iterator(tail);
 	}
-	else if (searcher.pos() == -1) {
+	if (index < 0) {
+		index = index + count;
+	}
+	if (searcher.pos() == -1) {
 		while ( searcher.pos() != index && !searcher.isPastEnd()) {
 			searcher.moveForward();
 		}
@@ -166,6 +169,19 @@ Iterator LinkedList::operator[](int index) {
 			diff--;
 		}
 		return Iterator(searcher.current);
+	}
+}
+
+Iterator LinkedList::at(int index) {
+	if (index > count) {
+		return Iterator(tail);
+	}
+	else {
+		Iterator iter(head);
+		for (int i = 0; i < index; i++) {
+			iter.moveForward();
+		}
+		return iter;
 	}
 }
 

@@ -34,6 +34,7 @@ public:
 	Iterator find(int x);
 
 	Iterator operator[](int index);
+	Iterator at(int index);
 
 	int size() const;
 };
