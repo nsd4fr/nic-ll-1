@@ -18,7 +18,7 @@ Use cases where this optimization is useful is obviously when one needs a linked
 This optimization does not aid in the search for the element (based on element content, rather than index). Thus it is identical to a normal linked list for these scenarios.
 
 ## Extendability
-In some implementations, multiple Searcher's could be stored, perhaps one beginning at the head of the list, one at the tail. This would further increase efficiency at little memory cost. In this case, it only requires one additional comparison to see which Searcher is closer to the index requested. 
+In some implementations, multiple Searchers could be stored, perhaps one beginning at the head of the list, one at the tail. This would further increase efficiency at little memory cost. In this case, it only requires one additional comparison to see which Searcher is closer to the index requested. 
 
 
 # Example 
